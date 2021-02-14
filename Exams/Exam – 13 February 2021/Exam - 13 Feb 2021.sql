@@ -93,7 +93,7 @@ DECLARE @repositoryId INT=
     FROM Repositories r
     WHERE r.Name = 'Softuni-Teamwork'
 )
-
+--find and delete
 DELETE FROM RepositoriesContributors
 WHERE RepositoriesContributors.RepositoryId = 3
 
