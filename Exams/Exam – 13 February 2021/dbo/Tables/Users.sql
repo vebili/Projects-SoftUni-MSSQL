@@ -1,0 +1,7 @@
+﻿CREATE TABLE Users
+(
+ Id INT PRIMARY KEY IDENTITY, 
+ Username   VARCHAR(30) NOT NULL, 
+ [Password] VARCHAR(30) NOT NULL, 
+ Email      VARCHAR(50) NOT NULL
+)

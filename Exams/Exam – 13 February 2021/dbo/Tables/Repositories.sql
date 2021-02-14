@@ -1,0 +1,5 @@
+﻿CREATE TABLE Repositories
+(
+ Id INT PRIMARY KEY IDENTITY, 
+ [Name]   VARCHAR(50) NOT NULL
+)

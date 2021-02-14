@@ -157,7 +157,7 @@ ORDER BY f.Id, f.[Name], Size
 
 GO
 
---9!!!!!!!!
+--9
 USE Bitbucket
 GO
 
@@ -167,22 +167,6 @@ FROM Repositories r
      JOIN RepositoriesContributors rc ON r.Id = rc.RepositoryId
 GROUP BY r.Id, r.[Name]
 ORDER BY Commits DESC, r.Id, r.[Name]
-
--- One repository has many commits with CommitContibutor and has many
--- RepositoriesContributors. So we have to find the combination of them, 
--- not only relation between repository and commit.
-/*
-SELECT r.Id RepID, 
-       r.[Name], 
-       c.RepositoryId, 
-       c.Id commitID, 
-       c.ContributorId CommitsContributorId, 
-       rc.ContributorId RepositoriesContributorsId
-FROM Commits c
-     JOIN Repositories r ON r.Id = c.RepositoryId
-     JOIN RepositoriesContributors rc ON r.Id = rc.RepositoryId
-ORDER BY RepID;
-*/
 
 GO
 
@@ -216,7 +200,7 @@ RETURNS INT
          RETURN @countCommits
      END
 
-SELECT dbo.udf_AllUserCommits('UnderSinduxrein')
+--SELECT dbo.udf_AllUserCommits('UnderSinduxrein')
 GO
 
 --12
@@ -231,4 +215,4 @@ SELECT f.Id, f.Name, Concat(f.Size, 'KB') Size
      ORDER BY f.Id ASC, f.Name ASC, Size DESC
 GO
 
-EXEC usp_SearchForFiles 'txt'
+--EXEC usp_SearchForFiles 'txt'
