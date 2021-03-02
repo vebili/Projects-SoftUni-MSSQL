@@ -6,4 +6,5 @@ Projects-SoftUni-MSSQL<br/>
 03.Table-Relations<br/>
 04.Built-in-Functions<br/>
 05.Subqueries-and-JOINs<br/>
+06.Indices-and-Data-Aggregation<br/>
 <br/>
