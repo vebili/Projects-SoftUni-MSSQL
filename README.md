@@ -7,4 +7,4 @@ Projects-SoftUni-MSSQL<br/>
 04.Built-in-Functions<br/>
 05.Subqueries-and-JOINs<br/>
 06.Indices-and-Data-Aggregation<br/>
-<br/>
+07.Functions-and-Stored-Procedures<br/>
