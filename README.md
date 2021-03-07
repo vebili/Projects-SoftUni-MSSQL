@@ -8,3 +8,4 @@ Projects-SoftUni-MSSQL<br/>
 05.Subqueries-and-JOINs<br/>
 06.Indices-and-Data-Aggregation<br/>
 07.Functions-and-Stored-Procedures<br/>
+<br/>
